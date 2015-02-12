@@ -9,7 +9,7 @@
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
 <!--    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
-  <style type="text/css">
+  <style id="font-style" type="text/css">
     /* cyrillic-ext */
     @font-face {
       font-family: 'Open Sans';
@@ -141,7 +141,7 @@
   </style>
 
 <!--    <link href="css/style.css" rel="stylesheet"> -->
-    <style type="text/css">
+    <style id="style" type="text/css">
       html {
         font-size: 100%;
         overflow-y: scroll;
@@ -191,10 +191,9 @@
         body { font-size: 12px;}
         header p { padding-left: 4.5em;}
       }
-      </style>
-      <link href="css/print.css" rel="stylesheet">
-
-      <script>
+    </style>
+    <link href="css/print.css" rel="stylesheet" media="print">
+    <script async>
         (function(w,g){w['GoogleAnalyticsObject']=g;
         w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
 
@@ -202,8 +201,8 @@
         ga('create', 'UA-XXXX-Y');
         ga('send', 'pageview');
     </script>
-    <script async src="http://www.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript">
+    <script id="analytics" async src="http://www.google-analytics.com/analytics.js"></script>
+    <script id="perfmatters" type="text/javascript">
       // Measuring the Critical Rendering Path with Navigation Timing
       // https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp
 
